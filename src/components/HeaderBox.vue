@@ -28,7 +28,6 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/style/variables.scss';
-
 header{
     background: #fff;
     display: flex;
