@@ -39,7 +39,7 @@ header{
     }
     ul{
         display: flex;
-        color: $text-primary-color;
+        color: $text-secondary-color;
         li{
             padding: 15px;
             font-size: 15px;

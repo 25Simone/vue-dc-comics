@@ -1,35 +1,87 @@
 @import '@/style/variables.scss';
-#shop-shortcut-section{
-    background: $blue-color;
-    color: #fff;
-    > div{
-        width: 1200px;
-        margin: 0 auto;
-        padding: 30px;
-        ul{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            li{
-                font-size: 12px;
+footer{
+    #shop-shortcut-section{
+        background: $blue-color;
+        color: $text-primary-color;
+        > div{
+            padding: 30px;
+            ul{
                 display: flex;
+                justify-content: space-between;
                 align-items: center;
-                .shortcut-icon{
-                    width: 45px;
-                    margin-right: 15px;
+                li{
+                    font-size: 12px;
+                    display: flex;
+                    align-items: center;
+                    .shortcut-icon{
+                        width: 45px;
+                        margin-right: 15px;
+                    }
                 }
             }
         }
     }
-}
-
-#footer-links-section{
-    height: 600px;
-    background: url('../assets/footer-bg.jpg');
-    background-size: cover;
-}
-
-#footer-socials-section{
-    height: 100px;
-    background: #303030;
+    
+    #footer-links-section{
+        height: 420px;
+        background: url('../assets/footer-bg.jpg');
+        background-size: cover;
+        color: $text-primary-color;
+        >div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .links-lists{
+                display: flex;
+                >div{
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    h3{
+                        font-size: 20px;
+                        margin: 15px 0;
+                    }
+                    li{
+                        margin: 5px 0;
+                        color: $text-tertiary-color;
+                    }
+                }
+            }
+            #dc-logo{
+                display: flex;
+                align-items: center;
+                max-height: 420px;
+                overflow: hidden;
+                img{
+                    width: 600px;
+                }
+            }
+        }
+    }
+    
+    #footer-socials-section{
+        background: #303030;
+        padding: 30px;
+        >.container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .button{
+                color: $text-primary-color;
+                font-size: 20px;
+                padding: 10px;
+                border: 2px solid $blue-color;
+            }
+            >div{
+                width: 30%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                span{
+                    color: $blue-color;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
 }

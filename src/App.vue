@@ -11,7 +11,7 @@
 import HeaderBox from './components/HeaderBox.vue'
 import JumbotronBox from './components/JumbotronBox.vue'
 import MainContent from './components/MainContent.vue'
-import FooterApp from './components/FooterApp.vue'
+import FooterApp from './components/FooterApp'
 export default {
   name: 'App',
   components: {
