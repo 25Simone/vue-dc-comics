@@ -1,0 +1,35 @@
+@import '@/style/variables.scss';
+#shop-shortcut-section{
+    background: $blue-color;
+    color: #fff;
+    > div{
+        width: 1200px;
+        margin: 0 auto;
+        padding: 30px;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li{
+                font-size: 12px;
+                display: flex;
+                align-items: center;
+                .shortcut-icon{
+                    width: 45px;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
+
+#footer-links-section{
+    height: 600px;
+    background: url('../assets/footer-bg.jpg');
+    background-size: cover;
+}
+
+#footer-socials-section{
+    height: 100px;
+    background: #303030;
+}
