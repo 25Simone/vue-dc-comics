@@ -43,7 +43,6 @@ header{
         li{
             padding: 15px;
             font-size: 15px;
-            cursor: pointer;
         }
     }
 }
