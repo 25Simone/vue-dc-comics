@@ -1,5 +1,6 @@
 // import variables
 @import './variables.scss';
+
 // font
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body{
@@ -13,7 +14,6 @@ body{
     box-sizing: border-box;
 }
 
-
 // reset ul style
 ul{
     list-style: none;
@@ -21,6 +21,7 @@ ul{
 li{
     cursor: pointer;
 }
+
 // container
 .container{
     width: 1200px;
@@ -35,4 +36,5 @@ li{
     padding: 10px 25px;
     display: inline-block;
     background: $blue-color;
+    cursor: pointer;
 }

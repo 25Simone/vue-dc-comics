@@ -2,6 +2,7 @@
     <main>
         <div class="container">
             <div class="button current-series-button">CURRENT SERIES</div>
+            <!-- CARDS -->
             <div class="container cards-container">
                 <card-box
                 v-for='(card, index) in cards'
