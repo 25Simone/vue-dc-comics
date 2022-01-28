@@ -2,9 +2,9 @@
 <div class="container">
     <div class="card">
         <div class="card-image">
-            <img src="" alt="">
+            <img :src='thumb' alt="">
         </div>
-        <p></p>
+        <p>{{}}</p>
     </div>
 </div>
 </template>
@@ -12,6 +12,9 @@
 <script>
 export default {
     name:'Card',
+    props: {
+        thumb: String,
+    }
 }
 </script>
 
