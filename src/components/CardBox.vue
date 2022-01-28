@@ -1,10 +1,12 @@
 <template>
 <!-- CARD -->
     <div class="card" >
+        <!-- CARD IMG -->
         <div class="card-image">
             <img :src='thumb' alt="card img">
         </div>
         <h4>{{series.toUpperCase()}}</h4>
+        <!-- CARD TXT -->
         <p>
             {{type}}
             <br />
@@ -27,6 +29,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/style/variables.scss';
+
 .card{
     width: calc(100% / 6);
     padding: 15px;

@@ -78,12 +78,13 @@
                         </ul>
                     </div>
                 </div>
+                <!-- DC LOGO -->
                 <div id="dc-logo">
                     <img src="@/assets/dc-logo-bg.png" alt="logo dc comics">
                 </div>
             </div>
         </div>
-        <!-- FOOTER SOCIALS -->
+        <!-- FOOTER SOCIALS SECTION-->
         <div id="footer-socials-section">
             <div class="container">
                 <div>
@@ -104,7 +105,6 @@
 
 <script>
 export default {
-    
 }
 </script>
 

@@ -4,6 +4,7 @@
             <div class="button current-series-button">CURRENT SERIES</div>
             <!-- CARDS -->
             <div class="container cards-container">
+                <!-- PRINT CARD COMPONENT -->
                 <card-box
                 v-for='(card, index) in cards'
                 :key='index'
@@ -13,8 +14,8 @@
                 :price='card.price'
                 />
             </div>
-            
         </div>
+        <!-- LOAD MORE SECTION -->
         <div id="load-more-section">
             <div class="button">LOAD MORE</div>
         </div>
@@ -24,6 +25,7 @@
 <script>
 import comicsList from '@/jsons/comicsList.json'
 import CardBox from './CardBox.vue'
+
 export default {
     name: 'Main',
     components: {
@@ -37,8 +39,9 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '@/style/variables.scss';
+
 main{
     width: 100%;
     background: #1c1c1c;
