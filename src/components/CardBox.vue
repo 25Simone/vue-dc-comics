@@ -1,9 +1,15 @@
 <template>
+<!-- CARD -->
     <div class="card" >
         <div class="card-image">
             <img :src='thumb' alt="card img">
         </div>
         <h4>{{series.toUpperCase()}}</h4>
+        <p>
+            {{type}}
+            <br />
+            {{price}}
+        </p>
     </div>
 </template>
 
@@ -13,6 +19,8 @@ export default {
     props: {
         thumb: String,
         series: String,
+        type: String,
+        price: String,
     }
 }
 </script>
@@ -21,7 +29,7 @@ export default {
 @import '@/style/variables.scss';
 .card{
     width: calc(100% / 6);
-    padding: 10px;
+    padding: 15px;
     .card-image{
         height: 170px;
         img{
@@ -34,6 +42,10 @@ export default {
     h4{
         color: $text-primary-color;
         font-weight: 400;
+        margin-top: 15px;
+    }
+    p{
+        color: #ccc;
     }
 }
 </style>

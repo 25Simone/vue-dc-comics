@@ -1,15 +1,21 @@
 <template>
     <main>
         <div class="container">
-            <div class="button">CURRENT SERIES</div>
+            <div class="button current-series-button">CURRENT SERIES</div>
             <div class="container cards-container">
-            <card-box
-            v-for='(card, index) in cards'
-            :key='index'
-            :thumb='card.thumb'
-            :series='card.series'
-            />
+                <card-box
+                v-for='(card, index) in cards'
+                :key='index'
+                :thumb='card.thumb'
+                :series='card.series'
+                :type='card.type'
+                :price='card.price'
+                />
             </div>
+            
+        </div>
+        <div id="load-more-section">
+            <div class="button">LOAD MORE</div>
         </div>
     </main>
 </template>
@@ -34,23 +40,21 @@ export default {
 @import '@/style/variables.scss';
 main{
     width: 100%;
-    height: 700px;
     background: #1c1c1c;
     position: relative;
-    .button{
-        color: #fff;
-        font-size: 25px;
-        font-weight: bold;
-        padding: 10px 25px;
+    .button.current-series-button{
         position: absolute;
         top: -25px;
-        display: inline-block;
-        background: $blue-color;
     }
     .cards-container{
         display: flex;
         flex-wrap: wrap;
         padding: 30px;
+    }
+    #load-more-section{
+        padding: 30px;
+        display: flex;
+        justify-content: center;
     }
 }
 </style>
