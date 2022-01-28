@@ -5,16 +5,9 @@
         </div>
         <nav>
             <ul>
-                <li>CHARACTERS</li>
-                <li>COMICS</li>
-                <li>MOVIES</li>
-                <li>TV</li>
-                <li>GAMES</li>
-                <li>COLLECTIBLES</li>
-                <li>VIDEOS</li>
-                <li>FANS</li>
-                <li>NEWS</li>
-                <li>SHOP</li>
+                <li v-for='button in buttons' :key='button.id'>
+                    <a :href="button.url">{{button.label}}</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -22,7 +15,9 @@
 
 <script>
 export default {
-    
+   props: {
+       buttons: Array,
+   }
 }
 </script>
 
@@ -39,10 +34,14 @@ header{
     }
     ul{
         display: flex;
-        color: $text-secondary-color;
         li{
-            padding: 15px;
-            font-size: 15px;
+            margin: 0 15px;
+            font-size: 13px;
+            font-weight: bold;
+            a{
+                text-decoration: none;
+                color: $text-secondary-color;
+            }
         }
     }
 }

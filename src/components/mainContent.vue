@@ -5,12 +5,18 @@
 </template>
 
 <script>
+
 export default {
+    name: 'Main',
+    components: {
+
+    }
     
 }
 </script>
 
 <style lang="scss">
+@import '@/style/variables.scss';
 main{
     width: 100%;
     height: 700px;

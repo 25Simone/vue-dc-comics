@@ -71,6 +71,11 @@ footer{
                 font-size: 20px;
                 padding: 10px;
                 border: 2px solid $blue-color;
+                cursor: pointer;
+                transform: all 1.5s;
+                &:hover{
+                    transform: scale(1.05);
+                }
             }
             >div{
                 width: 30%;
@@ -80,6 +85,7 @@ footer{
                 span{
                     color: $blue-color;
                     font-size: 20px;
+                    cursor: pointer
                 }
             }
         }
