@@ -3,7 +3,11 @@
     <div class="card" >
         <!-- CARD IMG -->
         <div class="card-image">
-            <img :src='thumb' alt="card img">
+            <img class="thumb" :src='thumb' alt="card img">
+            <!-- OVERLAY -->
+            <div class="card-img-overlay">
+                <img src="@/assets/dc-logo.png" alt="logo DC">
+            </div>
         </div>
         <h4>{{series.toUpperCase()}}</h4>
         <!-- CARD TXT -->
@@ -33,9 +37,11 @@ export default {
 .card{
     width: calc(100% / 6);
     padding: 15px;
+    cursor: pointer;
     .card-image{
+        position: relative;
         height: 170px;
-        img{
+        .thumb{
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -49,6 +55,23 @@ export default {
     }
     p{
         color: #ccc;
+    }
+    .card-img-overlay{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .5);
+        display: none;
+        >img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &:hover .card-img-overlay{
+        display: block;
     }
 }
 </style>
